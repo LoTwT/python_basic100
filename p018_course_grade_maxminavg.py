@@ -2,7 +2,7 @@
 # key: course, value: grade list
 course_grades = {}
 
-with open("./p018_course_student_grade_input.txt", "r", encoding="utf-8") as fin:
+with open("./p018/p018_course_student_grade_input.txt", "r", encoding="utf-8") as fin:
     for line in fin:
         line = line[:-1]
         course, sclass, sname, grade = line.split(",")

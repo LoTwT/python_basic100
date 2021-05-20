@@ -2,7 +2,7 @@
 import os
 import shutil
 
-dir_path = "./arrange_dir"
+dir_path = "./p016"
 
 for file in os.listdir(dir_path):
     ext = os.path.splitext(file)[1]
@@ -12,4 +12,4 @@ for file in os.listdir(dir_path):
 
     source_path = f"{dir_path}/{file}"
     target_path = f"{dir_path}/{ext}/{file}"
-    shutil.move(source_path, target_path)
+    shutil.copy(source_path, target_path)

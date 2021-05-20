@@ -3,7 +3,7 @@
 def compute_score():
     fields = []
     scores = []
-    with open("./p012_student_grade_input.txt", "r", encoding="utf-8") as fin:
+    with open("./p012/p012_student_grade_input.txt", "r", encoding="utf-8") as fin:
         for line in fin:
             line = line[:-1]
             fields = line.split(",")

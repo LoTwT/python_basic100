@@ -2,7 +2,7 @@
 
 def count_word_in_article():
     word_count = {}
-    with open("./p014.txt", "r", encoding="utf-8") as fin:
+    with open("./p014/p014.txt", "r", encoding="utf-8") as fin:
         for line in fin:
             line = line[:-1]
             words = line.split()

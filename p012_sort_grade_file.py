@@ -1,8 +1,11 @@
 # 读取 txt 成绩文件实现排序
 
+file_path = "./p012"
+
+
 def read_file():
     result = []
-    with open("./p012_student_grade_input.txt", "r", encoding="utf-8") as fin:
+    with open(f"./{file_path}/p012_student_grade_input.txt", "r", encoding="utf-8") as fin:
         for line in fin:
             line = line[:-1]
             result.append(line.split(","))  # 注意换行符
@@ -14,7 +17,7 @@ def sort_grades(datas):
 
 
 def save_datas(datas):
-    with open("./p012_student_grade_file_output.txt", "w", encoding="utf-8") as fout:
+    with open(f"./{file_path}/p012_student_grade_file_output.txt", "w", encoding="utf-8") as fout:
         for data in datas:
             fout.write(",".join(data) + "\n")
 
